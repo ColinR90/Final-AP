@@ -1,7 +1,5 @@
 global Election_Candidates
 global Election_Regions
-global Election_Parties
-Election_Parties = input("Input amount of election Political Parties:")
 Election_Candidates = input("input amount of candidates:")
 Election_Regions = input("input amount of electoral regions:")
 class Candidate :
@@ -27,6 +25,20 @@ class Electoral_Region:
         self.Population = Population
         self.Party_Favorability = Party_Favorability
         self.Political_Favorability = Political_Favorability
+
+def Create_Regions (x) :
+  for c in range(1,x) :
+    Population = input("Insert Population of Region:")
+    Party_Favourability = input ("Insert Party Favourability: ")
+    Political_Favourability = input("Insert Political Favourability: ")
+    Region = Electoral_Region(Population, Party_Favourability, Political_Favourability)
+    #sql command
+def Create_Candidates(x):
+    for c in range (1,x)
+    Name = input("Insert Name")
+    Age = input ("Age")
+    Political_Party = input("Political Party")
+    Political_Opinion_Numeral = input("Insert Politcal Opinion_Numeral (from 1-10, 1 meaning very left leaning and 10 meaning very right leaning):, ")
     
 
 
